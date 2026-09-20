@@ -6,7 +6,7 @@ const lightbox = new SimpleLightbox('.gallery a', {
       captionDelay: 250,
 });
     
-export function createGallery(images) {
+export function renderGallery(images) {
     const gallery = document.querySelector('.gallery');
     const markup = images.map(image => {
       return `
